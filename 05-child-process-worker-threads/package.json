@@ -1,0 +1,14 @@
+{
+  "name": "6",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start1": "node app1.js",
+    "start2": "node app2.js",
+    "start3": "node app3.js"
+  },
+  "keywords": [],
+  "author": "Olena Kiper",
+  "license": "ISC"
+}
