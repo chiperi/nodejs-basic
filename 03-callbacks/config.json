@@ -1,0 +1,5 @@
+{
+    "filesDir": "./files",
+    "supportedFileTypes": ["txt", "csv", "json", "xml"],
+    "encoding": "utf8"
+}

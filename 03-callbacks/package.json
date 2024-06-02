@@ -1,0 +1,16 @@
+{
+  "name": "callbacks-task",
+  "version": "1.0.0",
+  "description": "Write the programm for reading files in directory [`./files`](./files/) (use function `fs.readdir`). Each file contains strings of text or numbers.\r The program must find all the numbers in all the files, calculate their sum and display the result on the screen. File names and their formats can be different, so the program must read all files with formats `.txt`, `.csv`, `.json` and `.xml` in the directory (use function `fs.readFile` for reading files).",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "jest"
+  },
+  "author": "Olena Kiper",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.5.0",
+    "xml2js": "^0.6.2"
+  }
+}
