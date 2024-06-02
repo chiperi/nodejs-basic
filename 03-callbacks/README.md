@@ -1,5 +1,3 @@
-# Node.js Practical
-
 ## Asynchronous programming in Node.js: code with callbacks
 ### Task
 Write the programm for reading files in directory [`./files`](./files/) (use function `fs.readdir`). Each file contains strings of text or numbers.
