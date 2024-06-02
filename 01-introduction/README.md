@@ -1,5 +1,3 @@
-# Node.js Practical
-
 ## Introduction to Node.js: basic concepts and principles of work Installing and configuring the development environment to work with Node.js
 
 ### Task
