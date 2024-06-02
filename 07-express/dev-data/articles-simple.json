@@ -1,0 +1,47 @@
+[
+    {
+      "id": 0,
+      "title": "The Forest Hiker",
+      "description": "Breathtaking hike through the Canadian Banff National Park",
+      "comments": [
+        {
+          "id": 0,
+          "content": "Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "title": "The Coastal Explorer",
+      "description": "Discover stunning coastal landscapes on a hiking adventure",
+      "comments": [
+        {
+          "id": 0,
+          "content": "This hike was truly amazing, I would recommend it to anyone!"
+        },
+        {
+          "id": 1,
+          "content": "The views were breathtaking, definitely a hike to remember.",
+          "lastChangedAt": "2022-03-15,18:00"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "The Mountain Trekker",
+      "description": "Experience the rugged beauty of the Rocky Mountains on an unforgettable hike",
+      "comments": [
+        {
+          "id": 0,
+          "content": "This was one of the toughest hikes I've ever done, but also the most rewarding!",
+          "lastChangedAt": "2022-05-01,13:30"
+        },
+        {
+          "id": 1,
+          "content": "The scenery was incredible, I felt like I was on top of the world.",
+          "lastChangedAt": "2022-05-05,10:00"
+        }
+      ]
+    }
+  ]
+  

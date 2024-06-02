@@ -1,0 +1,30 @@
+{
+    "apiUrl": "/api/v1/",
+    "statuses": {
+        "200": "success",
+        "201": "success",
+        "400": "fail",
+        "404": "fail",
+        "500": "server_error"
+    },
+    "statusMessages": {
+        "articles": {
+            "404": "No articles found",
+            "500": "Internal server error"
+        },
+        "article": {
+            "400": "Invalid article id",
+            "400_1": "Title is required",
+            "400_2": "Description is required",
+            "400_3": "No data to update article",
+            "404": "Invalid article id",
+            "500": "Internal server error"
+        },
+        "comments": {
+            "400": "Content is required",
+            "400_1": "Author is required",
+            "404": "Invalid comment id",
+            "500": ""
+        }
+    }
+}
