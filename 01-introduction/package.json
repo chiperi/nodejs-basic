@@ -1,0 +1,21 @@
+{
+  "name": "introduction-chiperi",
+  "version": "1.0.0",
+  "description": "Configure a Node.js project that can be launched using the `npm start` script. The application should read a command-line argument called `--name`. If this argument is not present in the command line, `NAME` should be taken from a `.env` file. If such a file is not present, then the `name` should be set to `\"unknown user\"`. The application should output a message to the console saying `\"Hello ${name}!\"`.",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "test": "npx jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://github.com/chiperi/nodejs-basic#readme",
+  "devDependencies": {
+    "dotenv": "^16.4.5",
+    "jest": "^29.7.0"
+  }
+}
