@@ -1,0 +1,49 @@
+<h1>To-Do List</h1>
+<form method="POST" action="/add">
+  <input type="text" name="task" placeholder="Add a task" />
+  <button type="submit"  class="add-button">Add</button>
+</form>
+<ul>
+  <!-- we should render this list item for each existing task -->
+    <% tasks.forEach((task, index) => { %>
+
+      <li class="task-list-container">
+        <!-- whether the checkbox is checked should be defined by the task status -->
+        <!-- user should be able change the task status by checking/unchecking the checkbox -->
+        <input 
+          type="checkbox" 
+          name="done" 
+          value="<%= index %>"
+          <% if (task.done) {%> class='checked' <% } %>
+          onchange="toggleTask(this, <%= index%>);"
+        />
+        <!-- the span should have an id defined as 'taskText<index>', 
+          where index is index of a task in array of stored tasks, for example: 'taskText0', 'taskText1', ... -->
+        <!-- if task is done you should apply class 'done' to the span so the text will appear striken througn  -->
+        <span id="taskText<%= index %>" <% if(task.done) {%> class="done" <% } %>>
+          <!-- the task text sould be displayed here -->
+          <%= task.text %>
+        </span>
+        <!-- add the index parameter to the route defined in action attribute 
+        (so the route will be like '/delete/0', '/delete/1' asn so on) -->
+        <form method="POST" action="/delete/<%= index %>" style="display: inline;">
+          <button type="submit" class="delete-button">Delete</button>
+        </form>
+      </li>
+
+    <% }); %>
+</ul>
+
+<script>
+  function toggleTask(done, index) {
+    fetch('/toggle/' + index + '?done=' + done, { method: 'POST'})
+      .then(() => {
+        const taskText = document.getElementById('taskText' + index);
+        if (done) {
+          taskText.classList.add('done');
+        } else {
+          taskText.classList.remove('done');
+        }
+      });
+  }
+</script>
